@@ -32,7 +32,6 @@ char str[100];
     {
         printf("%c\n", carName[j]);
     }
-    
 
     return 0;
 }
