@@ -1,4 +1,34 @@
 #include <stdio.h>
+#include <math.h>
+
+void areaofcircle(){
+  int r;
+  float area;
+  printf("Enter the radius of the circle to find area\n");
+  scanf("%d",&r);
+  area=3.14*r*r;
+  printf("Area of given radius is:%.2f\n",area);
+}
+
+void circumference(){
+  int r;
+  float circum;
+  printf("Enter the radius of the circle to find circumference\n");
+  scanf("%d",&r);
+  circum=2*3.14*r;
+  printf("Circumference of the circle is:%.2f\n",circum);
+}
+
+void calculatedistance(){
+  int x1,x2,y1,y2;
+  float dis;
+  printf("Give the value of x1 and y1\n");
+  scanf("%d %d",&x1,&y1);
+  printf("Give the value of x2 and y2\n");
+  scanf("%d %d",&x2,&y2);
+  dis = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+  printf("%f\n",dis);
+}
 
 void tofahrenheit(float c)
 {
@@ -46,7 +76,7 @@ void myFunction(char name[])
   printf("Hello %s\n", name);
 }
 
-void name_age(char name[], int age)
+void name_age(char name[], int age)  //name is variable of data type array
 {
   printf("Hello %s ,you are %d years old\n", name, age);
 }
@@ -80,5 +110,19 @@ int main()
     tocelcius(f);
   }
 
+  printf("%f\n", ceil(1.4));
+  printf("%f\n", floor(1.4));
+
+  calculatedistance();
+  areaofcircle();
+  circumference();
+  
   return 0;
 }
+
+//What is local scope :- A variable created inside a function belongs to the local scope of that function, and can only be used inside that function, they are not accessible outside the function they throw error when they are called outside the function
+//if we are creating the local and global variable by same name then c will treat it as different variable, but we should avoid using same variables as they is confusing 
+
+//For code optimization, it is recommended to separate the declaration and the definition of the function.
+//function declaration above main(), and function definition below main()
+//in one function we can call another function 
