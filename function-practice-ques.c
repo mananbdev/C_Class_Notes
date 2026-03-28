@@ -30,7 +30,7 @@ int factorial(int n)
 
 int main()
 {
-  // sidesoftriangle();
+  sidesoftriangle();
   int n;
   printf("Enter the n\n");
   scanf("%d", &n);
