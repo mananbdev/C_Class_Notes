@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-//An inline function is a small function that asks the compiler to insert its code directly where it is called, instead of jumping to it.
+// An inline function is a small function that asks the compiler to insert its code directly where it is called, instead of jumping to it.
 
-inline int add(int a, int b) {
+inline int add(int a, int b)
+{
   return a + b;
 }
 
-int main(){
+int main()
+{
   printf("%d", add(5, 3));
 
   return 0;

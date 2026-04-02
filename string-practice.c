@@ -53,6 +53,6 @@ int main()
   strncpy(str6, str5, 6);
   printf("%s\n", str5);
   printf("%s\n", str6);
-  printf("%d",5||0 &&2);
+  printf("%d", 5 || 0 && 2);
   return 0;
 }

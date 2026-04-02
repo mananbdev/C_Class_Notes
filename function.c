@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Create a function
-void myFunction()            // function declaration
+void myFunction() // function declaration
 {
   printf("Hello World!\n"); // function is always executed outside the int main() .        function defination
 }
@@ -28,4 +28,3 @@ int main()
 
   return 0;
 }
-
